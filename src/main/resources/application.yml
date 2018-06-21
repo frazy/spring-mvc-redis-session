@@ -1,0 +1,5 @@
+server:
+  context-path: /
+spring:
+  profiles:
+    active: dev

@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  profiles: dev
+  redis:
+    host: 127.0.0.1
+    password: 123456
+    pool:
+      max-active: 10
+      max-idle: 2
+      max-wait: -1
+      min-idle: 0
+    port: 6379
+    timeout: 2000
+logging:
+  config: classpath:logback-dev.xml
